@@ -1,0 +1,42 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050505;color:#fff;font-family:Segoe UI,Arial,sans-serif}
+.wrap{max-width:1280px;margin:18px auto;padding:0 18px}
+.topbar{display:flex;align-items:center;padding:14px 0 22px}
+.logo-box{width:88px;height:88px;border:1px solid #222;border-radius:18px;display:flex;align-items:center;justify-content:center}
+.logo-box img{width:58px;height:58px;border-radius:50%}
+nav{display:flex;gap:55px;margin-left:34px}
+nav a{text-decoration:none;color:#fff}
+.route-top{margin-left:auto;color:#b8ff16;text-decoration:none}
+.panel{border:1px solid #222;border-radius:18px;overflow:hidden;background:#080808}
+.hero,.section{padding:52px 72px;border-bottom:1px solid #1d1d1d}
+.hero h1{font-size:clamp(48px,8vw,86px);margin-bottom:20px}
+.hero p{font-size:24px;color:#c6c6c6;margin-bottom:40px}
+.green-btn{display:inline-block;background:#b8ff16;color:#000;text-decoration:none;padding:18px 28px;border-radius:10px;font-weight:700}
+h2{font-size:34px;margin-bottom:28px}
+.cards,.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid #262626;border-radius:14px;padding:34px;min-height:110px;display:flex;align-items:center}
+.contacts{display:flex;justify-content:space-between;gap:40px}
+.contacts p{margin-bottom:10px;color:#d0d0d0;line-height:1.7}
+.buttons{display:flex;flex-direction:column;gap:16px;min-width:320px;justify-content:center}
+.call-btn,.map-btn{text-decoration:none;padding:18px;border-radius:12px;text-align:center}
+.call-btn{border:1px solid #b8ff16;color:#b8ff16}
+.map-btn{border:1px solid #444;color:#fff}
+footer{padding:24px 40px;display:flex;gap:30px;align-items:center;color:#c8c8c8}
+footer img{width:42px;height:42px;border-radius:50%}
+
+@media (max-width:768px){
+.wrap{padding:0 12px}
+.topbar{flex-wrap:wrap;gap:18px}
+.logo-box{width:70px;height:70px}
+.logo-box img{width:46px;height:46px}
+nav{width:100%;margin-left:0;justify-content:center;gap:22px;flex-wrap:wrap}
+.route-top{width:100%;text-align:center;margin-left:0}
+.hero,.section{padding:32px 22px}
+.hero p{font-size:20px}
+.cards,.reasons{grid-template-columns:1fr}
+.contacts{flex-direction:column}
+.buttons{min-width:auto;width:100%}
+.call-btn,.map-btn{width:100%}
+footer{flex-direction:column;align-items:flex-start;gap:12px}
+}
